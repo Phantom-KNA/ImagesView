@@ -1,0 +1,23 @@
+﻿<Window x:Class="ImagesView.Task1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImagesView"
+        mc:Ignorable="d"
+        Title="Task1" Height="500" Width="855" WindowStartupLocation="CenterScreen">
+    <Grid Background="Gray">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200*"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" x:Name="imageContainer" VerticalAlignment="Top" Height="320">
+            <Image x:Name="image12" Source="/12.jpg" Stretch="None"/>
+            <Image x:Name="image4" Source="/4.jpg" Stretch="None"/>
+            <Image x:Name="image13" Source="/13.jpg" Stretch="None"/>
+            <Image x:Name="image7" Source="/7.jpg" Stretch="None"/>
+        </StackPanel>
+
+        <Button x:Name="buttomWidth" Grid.Row="1" Content="Set Width" Click="Button_Click" HorizontalAlignment="Center" Height="30"/>
+    </Grid>
+</Window>
