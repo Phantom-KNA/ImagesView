@@ -24,26 +24,15 @@ namespace ImagesView
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void treeHeight_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
-            //Change Width
-            if (image12.Stretch == Stretch.Fill)
-            {
-                image12.Stretch = Stretch.None;
-                image4.Stretch = Stretch.None;
-                image13.Stretch = Stretch.None;
-                image7.Stretch = Stretch.None;
-                buttomWidth.Content = "Set Width";
-            }
-            else if (image12.Stretch == Stretch.None)
-            {
-                imageContainer.Height = 320;
-                image12.Stretch = Stretch.Fill;
-                image4.Stretch = Stretch.Fill;
-                image13.Stretch = Stretch.Fill;
-                image7.Stretch = Stretch.Fill;
-                buttomWidth.Content = "Restore Width";
-            }
+            imageContainer.Height = treeHeight.Value;
+        }
+
+        private void treeWidth_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        {
+            imageContainer.Width = treeWidth.Value;
         }
     }
+
 }

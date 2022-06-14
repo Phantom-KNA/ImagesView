@@ -5,19 +5,37 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImagesView"
         mc:Ignorable="d"
-        Title="Task1" Height="500" Width="855" WindowStartupLocation="CenterScreen">
-    <Grid Background="Gray">
+        Title="Task1" Height="auto" Width="auto" WindowStartupLocation="CenterScreen">
+    <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="200*"/>
             <RowDefinition Height="auto"/>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" x:Name="imageContainer" VerticalAlignment="Top" Height="320">
-            <Image x:Name="image12" Source="/12.jpg" Stretch="None"/>
-            <Image x:Name="image4" Source="/4.jpg" Stretch="None"/>
-            <Image x:Name="image13" Source="/13.jpg" Stretch="None"/>
-            <Image x:Name="image7" Source="/7.jpg" Stretch="None"/>
-        </StackPanel>
+        <GroupBox x:Name="imageContainer" BorderThickness="0.1" Height="500" Width="1320"  Header="Image Tree" Margin="5" Foreground="White">
+            <StackPanel Orientation="Horizontal" >
+                <Image x:Name="image12" Source="/12.jpg" Stretch="Uniform"/>
+                <Image x:Name="image4" Source="/4.jpg" Stretch="Uniform"/>
+                <Image x:Name="image13" Source="/13.jpg" Stretch="Uniform"/>
+                <Image x:Name="image7" Source="/7.jpg" Stretch="Uniform"/>
+            </StackPanel>
+        </GroupBox>
 
-        <Button x:Name="buttomWidth" Grid.Row="1" Content="Set Width" Click="Button_Click" HorizontalAlignment="Center" Height="30"/>
+
+        <GroupBox BorderThickness="0.1" Header="Size Values" Grid.Row="1" HorizontalAlignment="Left" Margin="10,10,0,10" Width="195" Foreground="White">
+            <StackPanel Orientation="Vertical" Margin="0,0,0,0">
+                <DockPanel VerticalAlignment="Center" Margin="10">
+                    <Label Content="Height:" Foreground="White" FontWeight="Bold"/>
+                    <TextBox Text="{Binding ElementName=treeHeight, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="32" Height="20" />
+                    <Slider Minimum="300" Maximum="600" Value="0" Name="treeHeight" ValueChanged="treeHeight_ValueChanged" Height="18" />
+                </DockPanel>
+                <DockPanel VerticalAlignment="Center" Margin="10">
+                    <Label Content="Width:" Foreground="White" FontWeight="Bold"/>
+                    <TextBox Text="{Binding ElementName=treeWidth, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="32" Height="20" />
+                    <Slider Minimum="775" Maximum="2000" Value="0" Name="treeWidth" ValueChanged="treeWidth_ValueChanged" Height="18" />
+                </DockPanel>
+            </StackPanel>
+
+        </GroupBox>
+
     </Grid>
 </Window>

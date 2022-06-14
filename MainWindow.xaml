@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:ImagesView"
         mc:Ignorable="d"
         Title="Task 2-3" Height="650" Width="800" WindowStartupLocation="CenterScreen">
-    <Grid Background="Gray">
+    <Grid Background="Black">
         <Grid.RowDefinitions>
             <RowDefinition Height="60*"/>
             <RowDefinition Height="75*"/>
@@ -36,75 +36,75 @@
         <Image x:Name="image5" Source="/5.jpg" Stretch="Fill" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="1" />
         <Image x:Name="image6" Source="/6.jpg" Stretch="Fill" Grid.Column="3" />
         <StackPanel Grid.Row="3" Grid.ColumnSpan="5" Orientation="Horizontal" >
-            <Label Content="img12 - Margin Top"/>
+            <Label Content="img12 - Margin Top" Foreground="White"/>
             <Slider x:Name="sliderimg12Top" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg12Top_ValueChanged"/>
-            <Label Content="Margin Bottom"/>
+            <Label Content="Margin Bottom" Foreground="White"/>
             <Slider x:Name="sliderimg12Buttom" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg12Buttom_ValueChanged"/>
-            <Label Content="Margin Left"/>
+            <Label Content="Margin Left" Foreground="White"/>
             <Slider x:Name="sliderimg12Left" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg12Left_ValueChanged"/>
-            <Label Content="Margin Right"/>
+            <Label Content="Margin Right" Foreground="White"/>
             <Slider x:Name="sliderimg12Right" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg12Right_ValueChanged"/>
 
         </StackPanel>
         <StackPanel Grid.Row="4" Grid.ColumnSpan="5" Orientation="Horizontal" >
-            <Label Content="img04 - Margin Top"/>
+            <Label Content="img04 - Margin Top" Foreground="White"/>
             <Slider x:Name="sliderimg04Top" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg04Top_ValueChanged"/>
-            <Label Content="Margin Bottom"/>
+            <Label Content="Margin Bottom" Foreground="White"/>
             <Slider x:Name="sliderimg04Bottom" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg04Bottom_ValueChanged"/>
-            <Label Content="Margin Left"/>
+            <Label Content="Margin Left" Foreground="White"/>
             <Slider x:Name="sliderimg04Left" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg04Left_ValueChanged"/>
-            <Label Content="Margin Right"/>
+            <Label Content="Margin Right" Foreground="White"/>
             <Slider x:Name="sliderimg04Right" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg04Right_ValueChanged"/>
 
         </StackPanel>
         <StackPanel Grid.Row="5" Grid.ColumnSpan="5" Orientation="Horizontal" >
-            <Label Content="img07 - Margin Top"/>
+            <Label Content="img07 - Margin Top" Foreground="White"/>
             <Slider x:Name="sliderimg07Top" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg07Top_ValueChanged"/>
-            <Label Content="Margin Bottom"/>
+            <Label Content="Margin Bottom" Foreground="White"/>
             <Slider x:Name="sliderimg07Bottom" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg07Bottom_ValueChanged"/>
-            <Label Content="Margin Left"/>
+            <Label Content="Margin Left" Foreground="White"/>
             <Slider  x:Name="sliderimg07Left" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg07Left_ValueChanged"/>
-            <Label Content="Margin Right"/>
+            <Label Content="Margin Right" Foreground="White"/>
             <Slider x:Name="sliderimg07Right" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg07Right_ValueChanged"/>
         </StackPanel>
         <StackPanel Grid.Row="6" Grid.ColumnSpan="5" Orientation="Horizontal" >
-            <Label Content="img03 - Margin Top"/>
+            <Label Content="img03 - Margin Top" Foreground="White"/>
             <Slider x:Name="sliderimg03Top" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg03Top_ValueChanged"/>
-            <Label Content="Margin Bottom"/>
+            <Label Content="Margin Bottom" Foreground="White"/>
             <Slider x:Name="sliderimg03Bottom" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg03Bottom_ValueChanged"/>
-            <Label Content="Margin Left"/>
+            <Label Content="Margin Left" Foreground="White"/>
             <Slider x:Name="sliderimg03Left" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg03Left_ValueChanged"/>
-            <Label Content="Margin Right"/>
+            <Label Content="Margin Right" Foreground="White"/>
             <Slider x:Name="sliderimg03Right" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg03Right_ValueChanged"/>
         </StackPanel>
         <StackPanel Grid.Row="7" Grid.ColumnSpan="5" Orientation="Horizontal" >
-            <Label Content="img05 - Margin Top"/>
+            <Label Content="img05 - Margin Top" Foreground="White"/>
             <Slider x:Name="sliderimg05Top" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg05Top_ValueChanged"/>
-            <Label Content="Margin Bottom"/>
+            <Label Content="Margin Bottom" Foreground="White"/>
             <Slider x:Name="sliderimg05Bottom" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg05Bottom_ValueChanged"/>
-            <Label Content="Margin Left"/>
+            <Label Content="Margin Left" Foreground="White"/>
             <Slider x:Name="sliderimg05Left" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg05Left_ValueChanged"/>
-            <Label Content="Margin Right"/>
+            <Label Content="Margin Right" Foreground="White"/>
             <Slider x:Name="sliderimg05Right" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg05Right_ValueChanged"/>
         </StackPanel>
         <StackPanel Grid.Row="8" Grid.ColumnSpan="5" Orientation="Horizontal" >
-            <Label Content="img13 - Margin Top"/>
+            <Label Content="img13 - Margin Top" Foreground="White"/>
             <Slider x:Name="sliderimg13Top" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg13Top_ValueChanged"/>
-            <Label Content="Margin Bottom"/>
+            <Label Content="Margin Bottom" Foreground="White"/>
             <Slider x:Name="sliderimg13Bottom" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg13Botom_ValueChanged"/>
-            <Label Content="Margin Left"/>
+            <Label Content="Margin Left" Foreground="White"/>
             <Slider x:Name="sliderimg13Left" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg13Left_ValueChanged"/>
-            <Label Content="Margin Right"/>
+            <Label Content="Margin Right" Foreground="White"/>
             <Slider x:Name="sliderimg13Right" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg13Right_ValueChanged"/>
         </StackPanel>
         <StackPanel Grid.Row="9" Grid.ColumnSpan="5" Orientation="Horizontal" >
-            <Label Content="img06 - Margin Top"/>
+            <Label Content="img06 - Margin Top" Foreground="White"/>
             <Slider x:Name="sliderimg06Top" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg06Top_ValueChanged"/>
-            <Label Content="Margin Bottom"/>
+            <Label Content="Margin Bottom" Foreground="White"/>
             <Slider x:Name="sliderimg06Bottom" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg06Bottom_ValueChanged"/>
-            <Label Content="Margin Left"/>
+            <Label Content="Margin Left" Foreground="White"/>
             <Slider x:Name="sliderimg06Left" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg06Left_ValueChanged"/>
-            <Label Content="Margin Right"/>
+            <Label Content="Margin Right" Foreground="White"/>
             <Slider x:Name="sliderimg06Right" Minimum="0" Maximum="100" Value="0" Width="100" HorizontalAlignment="Left" Margin="0,5,0,0" ValueChanged="sliderimg06Right_ValueChanged"/>
         </StackPanel>
         <Button Content="Reset" Grid.Row="10" Click="Button_Click"/>
