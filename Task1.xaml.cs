@@ -27,11 +27,27 @@ namespace ImagesView
         private void treeHeight_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             imageContainer.Height = treeHeight.Value;
+
         }
 
         private void treeWidth_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
         {
             imageContainer.Width = treeWidth.Value;
+        }
+        private void isUniform_Unchecked(object sender, RoutedEventArgs e)
+        {
+            image12.Stretch = Stretch.None;
+            image13.Stretch = Stretch.None;
+            image4.Stretch = Stretch.None;
+            image7.Stretch = Stretch.None;
+        }
+
+        private void isUniform_Checked(object sender, RoutedEventArgs e)
+        {
+            image12.Stretch = Stretch.Uniform;
+            image13.Stretch = Stretch.Uniform;
+            image4.Stretch = Stretch.Uniform;
+            image7.Stretch = Stretch.Uniform;
         }
     }
 

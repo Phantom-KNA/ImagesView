@@ -13,10 +13,10 @@
         </Grid.RowDefinitions>
         <GroupBox x:Name="imageContainer" BorderThickness="0.1" Height="500" Width="1320"  Header="Image Tree" Margin="5" Foreground="White">
             <StackPanel Orientation="Horizontal" >
-                <Image x:Name="image12" Source="/12.jpg" Stretch="Uniform"/>
-                <Image x:Name="image4" Source="/4.jpg" Stretch="Uniform"/>
-                <Image x:Name="image13" Source="/13.jpg" Stretch="Uniform"/>
-                <Image x:Name="image7" Source="/7.jpg" Stretch="Uniform"/>
+                <Image x:Name="image12" Source="/12.jpg" Stretch="None"/>
+                <Image x:Name="image4" Source="/4.jpg" Stretch="None"/>
+                <Image x:Name="image13" Source="/13.jpg" Stretch="None"/>
+                <Image x:Name="image7" Source="/7.jpg" Stretch="None"/>
             </StackPanel>
         </GroupBox>
 
@@ -33,6 +33,7 @@
                     <TextBox Text="{Binding ElementName=treeWidth, Path=Value, UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Width="32" Height="20" />
                     <Slider Minimum="775" Maximum="2000" Value="0" Name="treeWidth" ValueChanged="treeWidth_ValueChanged" Height="18" />
                 </DockPanel>
+                <CheckBox x:Name="isUniform" Content="Uniform" Foreground="White" Width="155" Unchecked="isUniform_Unchecked" Checked="isUniform_Checked"/>
             </StackPanel>
 
         </GroupBox>
